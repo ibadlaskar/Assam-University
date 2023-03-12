@@ -35,3 +35,27 @@ class Demo {
     }
 
 }
+
+/*  correct method*/
+
+/* class CustomException extends Exception {
+    
+
+    public CustomException(String message) {
+        super(message);
+    }
+}
+
+public class a20 {
+    public static void main(String[] args) {
+        try {
+            int num = 10;
+            if (num > 5) {
+                throw new CustomException("Number should be less than or equal to 5");
+            }
+        } catch (CustomException e) {
+            System.out.println("Custom Exception caught: " + e.getMessage());
+        }
+    }
+}
+*/
