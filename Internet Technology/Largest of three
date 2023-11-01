@@ -1,0 +1,28 @@
+<html>
+
+<body>
+    <label for="num1">Enter Number 1: </label>
+    <input type="number" id="num1"><br>
+    <label for="num2">Enter Number 2: </label>
+    <input type="number" id="num2"><br>
+    <label for="num3">Enter Number 3: </label>
+    <input type="number" id="num3"><br><br>
+    <button id="findLargestButton">Find Largest Number</button>
+
+    <script>
+        document.getElementById('findLargestButton').addEventListener('click', function () {
+            // Get the input values
+            let num1 = parseFloat(document.getElementById('num1').value);
+            let num2 = parseFloat(document.getElementById('num2').value);
+            let num3 = parseFloat(document.getElementById('num3').value);
+
+            // Find the largest number among the three
+            let largestNumber = Math.max(num1, num2, num3);
+
+            // Display the result using alert
+            alert('The largest number is: ' + largestNumber);
+        });
+    </script>
+</body>
+
+</html>
