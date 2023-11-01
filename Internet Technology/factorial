@@ -1,0 +1,28 @@
+<html>
+<body>
+    <label for="numberInput">Enter a number:</label>
+    <input type="number" id="numberInput">
+    <button id="calculateButton">Calculate Factorial</button>
+
+    <script>
+        document.getElementById('calculateButton').addEventListener('click', function () {
+          
+            let number = parseInt(document.getElementById('numberInput').value);
+            
+         
+            if (isNaN(number) || number < 0) {
+                alert('Please enter a non-negative integer.');
+                return;
+            }
+         
+            let factorial = 1;
+            for (let i = 1; i <= number; i++) {
+                factorial *= i;
+            }
+            
+            alert('The factorial of ' + number + ' is: ' + factorial);
+        });
+    </script>
+</body>
+
+</html>
