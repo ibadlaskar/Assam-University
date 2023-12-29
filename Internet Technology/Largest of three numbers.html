@@ -1,0 +1,32 @@
+<!Doctype html>
+
+<html>
+<body>
+
+<h1>largest of three numbers</h1>
+<script >
+
+let x,y,z;
+x=parseInt(prompt("Enter the number"));
+y=parseInt(prompt("Enter the number"));
+z=parseInt(prompt("Enter the number"));
+  
+let largest;
+
+if(x>=y && x>=z){
+largest=x;
+}
+else if(y>=x && y>=z){
+largest=y;
+}
+
+else{
+largest=z;
+
+}
+
+document.write("Largest Number Is "+largest);
+</script>
+</body>
+</html>
+
